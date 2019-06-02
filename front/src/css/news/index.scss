@@ -1,0 +1,198 @@
+@import "../common/inital";
+@import "../common/constance";
+@import "../common/header";
+@import "../common/footer";
+@import "../common/main";
+
+
+
+
+
+.main{
+
+
+        .banner-group {
+            width: 100%;
+            height: $bannerHeight;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+            .banner-ul {
+                overflow: hidden;
+                //width: $bannerWidth*3;
+                position: absolute;
+                left: 0;
+
+                li{
+                    float: left;
+                    width: $bannerWidth;
+                    height: $bannerHeight;
+
+                    img{
+                        width: $bannerWidth;
+                        height: $bannerHeight;
+                    }
+                };
+
+            }
+            .arrow {
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 70px;
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                margin-top: -45px;
+                cursor:pointer;
+                display: none;
+            }
+            .left-arrow {
+                left: 20px;
+            }
+            .right-arrow {
+                right: 20px;
+            }
+            .page-control-group{
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 10px;
+                .page-control{
+                    margin: 0 auto;
+                    overflow: hidden;
+                    //width: 4px*10+8px*2+32px;
+                    li{
+                        width: 10px;
+                        height: 10px;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        color: white;
+                        float: left;
+                        box-sizing: border-box;
+                        margin: 0 8px;
+                        cursor: pointer;
+                        &.active {
+                            background: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+.main{
+    .wrapper{
+        .news-wrapper{
+            .list-outer-group {
+                height: 100%;
+                background: white;
+                .list-tab {
+                    width: 100%;
+                    height: 66px;
+                    border: 1px solid #eee;
+                    border-left: none;
+                    border-right: none;
+                    li {
+                        float: left;
+                        padding: 0 10px;
+                        line-height: 66px;
+                        a {
+                            color: #878787;
+                        }
+                        &.active{
+                            a {
+                              color:#212121;
+                            }
+                        }
+                    }
+                }
+                .list-inner-group {
+                   li {
+                       padding: 20px;
+                       overflow: hidden;
+                       .thumbnail-group{
+                           float: left;
+                           height: 162px;
+                           width: 226px;
+                           img {
+                               width: 100%;
+                               height: 100%;
+                           }
+                       }
+                       .news-group{
+                           float: right;
+                           width: 504px;
+                           height: 162px;
+                           position: relative;
+                           .title {
+                               font-size: 22px;
+                            a {
+                                 color: #212121;
+                                &:hover {
+                                    color: $themmecolor;
+                                }
+                            }
+                           }
+                           .desc {
+                               color: #878787;
+                               font-size: 14px;
+                               margin-top: 10px;
+                           }
+                           .more{
+                               position: absolute;
+                               left:0;
+                               right: 0;
+                               bottom: 0;
+                               font-size: 14px;
+                               color: #878787;
+                               .author {
+                                   float: right;
+                               }
+                               .pub-time{
+                                   margin-left: 10px;
+                                   float: right;
+                               }
+                               .category {
+                                   color: $themmecolor;
+                               }
+                           }
+
+                       }
+                   }
+
+
+                }
+                .load-more-group {
+                    padding: 20px 0;
+                    text-align: center;
+                    .load-more{
+                        width: 402px;
+                        height: 50px;
+                        background: #d2dcea;
+                        border: none;
+                        outline: none;
+                        color:#6d85ac;
+                        cursor: pointer;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
